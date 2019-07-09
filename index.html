@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: pink;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background:pink;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color:lightpink;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: pink;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: pink;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: pink;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: white;
+  margin-top: 20px;
+
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Alondra's Portfolio </h1>
+  <p> WELCOME TO MY WEBSITE </p>
+</div>
+
+<div class="topnav">
+  <a href="https://www.instagram.com/xx.aalondra.xx/">Instagram</a>
+  <a href="https://twitter.com/Alondra_2365">Twitter</a>
+  
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2> </h2>
+      <h5>THEATER CLASS</h5>
+      
+      <img src="drama.jpg" style= "height: 400px; width: 400px"> 
+      <img src="Pic.jpg" style= "height: 400px; width: 400px"> 
+      <p>Favorite Class</p>
+      <p>Drama is a class were you get to meet many people which you will create memories forever</p>
+    </div>
+    <div class="card">
+      <h2>FRIENDS</h2>
+
+      <img src="Cindy.jpg" style= "height: 400px; width: 300px">
+      <img src="Daniel.jpg" style= "height: 400px; width: 300px">
+      <img src="Julia.jpg" style= "height: 400px; width: 260px">
+      
+      
+      <p>  These are some of my friends, which I have the most fun with and laugh until I can't breath.                </p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>ABOUT ME</h2>
+      
+      <img src="me.png" style= "height: 300px; width: 230px"> 
+      <p> I am currently a senior in high school, and I enjoy reading books and watching netlix.</p>
+    </div>
+    <div class="card">
+      <h3>PICS OF ME</h3>
+      <img src="me2.jpg" style= "height: 300px; width: 250px">
+      <img src="me3.jpg" style= "height: 300px; width: 250px">
+      
+        
+     
+    </div>
+    
+      
+
+      
+      
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+</html>
